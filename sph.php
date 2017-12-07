@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce SPH Broj članske iskaznice
 Plugin URI: https://idzan.eu
 Description: Plugin za dodavanje polja za Članove SPH u WooCommerceu & provjeru podataka s CSV
-Version: 1.0
+Version: 1.0.1
 Author: Marko Idzan & Media X
 Author URI: https://idzan.eu
 License: GPLv3
