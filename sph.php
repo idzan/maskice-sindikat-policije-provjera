@@ -2,9 +2,9 @@
 /*
 Plugin Name: WooCommerce SPH Broj članske iskaznice
 Plugin URI: https://idzan.eu
-Description: Plugin za dodavanje polja za pravne osobe (R1 račun) u WooCommerceu & provjeru podataka s CSV
+Description: Plugin za dodavanje polja za Članove SPH u WooCommerceu & provjeru podataka s CSV
 Version: 1.0
-Author: Media X
+Author: Marko Idzan & Media X
 Author URI: https://idzan.eu
 License: GPLv3
 */
@@ -124,7 +124,7 @@ function sph_woocommerce_email_order_meta_keys( $keys ) {
 }
 
 /**
- * Add the R1 column in order administration
+ * Add the SPH column in order administration
  **/
 
 add_filter( 'manage_edit-shop_order_columns', 'sph_broj_order_column', 20 );
@@ -136,7 +136,7 @@ function sph_broj_order_column( $columns ) {
 	return $updated_columns;
 }
 
-// Populate R1 column
+// Populate SPH column
 add_action( 'manage_shop_order_posts_custom_column', 'sph_broj_order_column_values', 2 );
 function sph_broj_order_column_values( $column ) {
 	global $post;
